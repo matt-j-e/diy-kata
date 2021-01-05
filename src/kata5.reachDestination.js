@@ -1,6 +1,11 @@
 const reachDestination = (distance, speed) => {
-    const eta = Math.round(distance / speed * 2) / 2;
-    const unit = eta === 1 ? 'hour' : 'hours';
+    let eta = Math.round(distance / speed * 2) / 2;
+    let unit = eta === 1 ? 'hour' : 'hours';
+    if (eta === 0) {
+        eta = 'a few';
+        unit = 'minutes';
+    }
+
     return `I should be there in ${eta} ${unit}.`;
 };
 
