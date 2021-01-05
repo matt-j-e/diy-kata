@@ -1,6 +1,6 @@
 const numberToReversedDigits = number => {
-    if(!Number.isInteger(number)) return "Error. Needs to be a number";
-    
+    if(!Number.isInteger(number)) return "Error. Needs to be an integer";
+
     return number
         .toString()
         .split('')
