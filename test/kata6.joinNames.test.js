@@ -14,6 +14,8 @@ const arr2 = [
   {name: 'Nina'},
   {name: 'Peechaya'}
 ];
+
+// construct arr3 - an array of objects each with name: of an uppercase alpha character
 const a2z = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const arr3 = [];
 a2z.split('').map(l => arr3.push({name: l}));
