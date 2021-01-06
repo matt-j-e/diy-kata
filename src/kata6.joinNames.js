@@ -1,15 +1,15 @@
 const joinNames = namesObj => {
-    let s = '';
+    let outputString = '';
     namesObj.map((obj, i) => {
         if(i === namesObj.length - 1) {
-            s += obj.name;
+            outputString += obj.name;
         } else if(i === namesObj.length - 2) {
-            s += obj.name + ' & ';
+            outputString += obj.name + ' & ';
         } else {
-            s += obj.name + ', ';
+            outputString += obj.name + ', ';
         }
     });
-    return s;
+    return outputString;
 };
 
 module.exports = joinNames;
