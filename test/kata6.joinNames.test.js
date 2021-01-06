@@ -16,9 +16,8 @@ const arr2 = [
 ];
 
 // construct arr3 - an array of objects each with name: of an uppercase alpha character
-const a2z = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const arr3 = [];
-a2z.split('').map(l => arr3.push({name: l}));
+'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(l => arr3.push({name: l}));
 
 describe("joinNames", () => {
   test("returns string of names, seperated by commas and an ampersand", () => {
